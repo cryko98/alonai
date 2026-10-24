@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alon AI</title>
+<meta name="description" content="Chat with Alon AI, an animated 3D character that knows pump.fun inside out.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<main class="app">
+  <section class="stage" id="stage">
+    <canvas id="scene" aria-label="Animated 3D Alon AI character"></canvas>
+    <header class="brand">
+      <span class="logo">ALON<span>AI</span></span>
+      <span class="live"><i></i>live</span>
+    </header>
+    <div class="loading" id="loading">Loading Alon…</div>
+  </section>
+
+  <aside class="chat" aria-label="Chat with Alon AI">
+    <div class="chat-head">
+      <div>
+        <h1>Chat with Alon AI</h1>
+        <p class="status" id="status">online</p>
+      </div>
+    </div>
+    <ol class="messages" id="messages" aria-live="polite"></ol>
+    <div class="chips" id="chips">
+      <button type="button">What is pump.fun?</button>
+      <button type="button">How does the bonding curve work?</button>
+      <button type="button">What's the PUMP token?</button>
+      <button type="button">Latest pump.fun news?</button>
+    </div>
+    <form class="composer" id="composer">
+      <textarea id="input" rows="1" maxlength="2000" placeholder="Ask Alon anything about pump.fun…" autocomplete="off"></textarea>
+      <button type="submit" id="send" aria-label="Send">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 11.5 21 3l-8.5 18-2.2-7.3L3 11.5Z" fill="currentColor"/></svg>
+      </button>
+    </form>
+    <p class="disclaimer">Unofficial fan-made AI. Not affiliated with pump.fun or Alon. Nothing here is financial advice. Never share your seed phrase.</p>
+  </aside>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>

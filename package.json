@@ -1,0 +1,16 @@
+{
+  "name": "alon-ai",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Animated 3D Alon AI character you can chat with, powered by the Claude API",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js"
+  },
+  "engines": {
+    "node": ">=22.9"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.3.0"
+  }
+}

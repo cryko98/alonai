@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "public",
+  "functions": {
+    "api/chat.js": {
+      "includeFiles": "knowledge.md",
+      "maxDuration": 60
+    }
+  }
+}
