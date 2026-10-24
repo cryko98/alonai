@@ -275,7 +275,7 @@ function greet() {
   setBusy(true);
   director.gesture('wave');
   speaker.start(alonBubble());
-  speaker.push("gm! I'm Alon AI, an AI character inspired by pump.fun's co-founder. Ask me anything about pump.fun, memecoins or how launching a coin works.");
+  speaker.push("gm! alon here. Ask me anything about pump.fun - how we built it, how launching a coin works, or what's new.");
   speaker.finish();
 }
 
