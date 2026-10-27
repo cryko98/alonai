@@ -39,7 +39,7 @@ Project Settings -> Environment Variables and redeploy. `vercel.json` serves `pu
 
 | Variable | Default | |
 |---|---|---|
-| `ANTHROPIC_API_KEY` | - | required for real replies |
+| `ANTHROPIC_API_KEY` (or `CLAUDE_API`) | - | required for real replies |
 | `CLAUDE_MODEL` | `claude-opus-5-5` | |
 | `CLAUDE_EFFORT` | `low` | `medium`/`high` = more thorough, slower replies |
 | `WEB_SEARCH` | on | set `off` to disable; web search must be enabled for your org in the Claude Console |
